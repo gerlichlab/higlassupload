@@ -1,0 +1,9 @@
+*.json
+__pycache__/
+*.pyc
+*.egg-info
+*.bed
+*.txt
+*.bedpe
+*.mcool
+*.bw
