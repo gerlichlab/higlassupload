@@ -9,7 +9,14 @@ This will set up a command called ```higlassUp``` in your environment that is th
 
 # Usage
 
-At the moment the script can handle bedfiles (.bed extension), bedpe files (.bedpe extension),mcooler files (.mcool) and biwig files (.bw). It will recognize how to dispatch clodius based on the extension and then upload the resulting file to a higlass server. The login credentials need to be available as environment variabels with your username being stored in `HIGLASSUSER` and your password being stored in `HIGLASSPWD`. 
+At the moment the script can handle bedfiles (.bed extension), bedpe files (.bedpe extension),mcooler files (.mcool) and biwig files (.bw). It will recognize how to dispatch clodius based on the extension and then upload the resulting file to a higlass server. The login credentials need to be available as environment variabels with your username being stored in `HIGLASSUSER` and your password being stored in `HIGLASSPWD`.
+
+On linux this can be done by:
+```
+export HIGLASSUSER=username
+export HIGLASSPWD=supersecretpassword
+```
+
 The upload command will then be the following:
 
 ```higlassUp file```
@@ -25,6 +32,9 @@ If you want to specify a specific projet onto which to upload to file you can do
 Moreover, you can specify the genome assembly to be used for the specific file. Currently, assembly hg19 and hg38 are available. The specification is done as follows:
 
 ```higlassUp --assemblh hg19|hg38 file```
+
+## Dockerhub container:
+This tool can be found ready to use in our main container on [dockerhub](https://hub.docker.com/repository/docker/gerlichlab/scshic_docker).
 
 # Defaults for Clodius
 
