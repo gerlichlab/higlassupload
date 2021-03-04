@@ -16,6 +16,7 @@ On linux this can be done by:
 export HIGLASSUSER=username
 export HIGLASSPWD=supersecretpassword
 ```
+Note: The username and your password should not contain `$` signs if you add it to your `.bashrc` file, since they will be interpreted by `bash`.
 
 The upload command will then be the following:
 
