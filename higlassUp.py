@@ -16,7 +16,8 @@ FILETYPES = {".bed": "bedfile",
              ".bigwig": "bigwig"}
 # Define chromsizes filenames
 CHROMSIZES = {"hg19": "hg19.chrom.sizes",
-              "hg38": "hg38.chrom.sizes"}
+              "hg38": "hg38.chrom.sizes",
+              "mm9": "mm9.chrom.sizes"}
 # define Clodius templates
 CLODIUSTEMPLATES = {
     "bedfile": "clodius aggregate bedfile --chromsizes-filename {} -o {} {}",
