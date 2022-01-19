@@ -129,7 +129,7 @@ def uploadFile(tempFile, fileType, server, name, project, assembly, username, pa
 @click.option('-v', 'verbose', is_flag=True,
               help='Verbose mode',
               show_default=True)
-@click.option('--assembly', '-a', 'assembly', default="hg19", type=click.Choice(['hg19', 'hg38'], case_sensitive=False),
+@click.option('--assembly', '-a', 'assembly', default="hg19", type=click.Choice(['hg19', 'hg38', 'mm9'], case_sensitive=False),
                 help="Assembly that was used to generate the data to be uploaded.")
 @click.option('--username', prompt=False,
              default=lambda: os.environ.get("HIGLASSUSER", ""))
