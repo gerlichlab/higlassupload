@@ -3,7 +3,7 @@
 
 The script needs [clodius](https://github.com/higlass/clodius), which has a lot of requiremens. So the best way to install is to create a conda environment and install the most important requirements uisng conda and then install this pacakge into the conda environment via pip:
 
-```pip install ${githubpath}```
+```pip install git+https://github.com/gerlichlab/higlassupload```
 
 This will set up a command called ```higlassUp``` in your environment that is the entry point for usage of this script.
 
