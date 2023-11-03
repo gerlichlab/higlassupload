@@ -1,15 +1,19 @@
 # Installation
 
 
-The script needs [clodius](https://github.com/higlass/clodius), which has a lot of requiremens. So the best way to install is to create a conda environment and install the most important requirements uisng conda and then install this pacakge into the conda environment via pip:
+The script needs [clodius](https://github.com/higlass/clodius), which has a lot of requirements. So the best way to install is to create a conda environment and install the most important requirements using conda and then install this package into the conda environment via pip:
 
 ```pip install git+https://github.com/gerlichlab/higlassupload```
 
-This will set up a command called ```higlassUp``` in your environment that is the entry point for usage of this script.
+This will set up a command called ```higlassUp``` in your environment, which is the entry point for usage of this script.
+
+# Accounts
+Accounts for https://gerlich.higlass.vbc.ac.at/ can be created by our lab using the admin panel
+```https://gerlich.higlass.vbc.ac.at/admin/login/?next=/admin/```.
 
 # Usage
 
-At the moment the script can handle bedfiles (.bed extension), bedpe files (.bedpe extension),mcooler files (.mcool) and biwig files (.bw). It will recognize how to dispatch clodius based on the extension and then upload the resulting file to a higlass server. The login credentials need to be available as environment variabels with your username being stored in `HIGLASSUSER` and your password being stored in `HIGLASSPWD`.
+At the moment, the script can handle bedfiles (.bed extension), bedpe files (.bedpe extension),mcooler files (.mcool) and biwig files (.bw). It will recognize how to dispatch clodius based on the extension and then upload the resulting file to a higlass server. The login credentials need to be available as environment variables, with your username being stored in `HIGLASSUSER` and your password being stored in `HIGLASSPWD`.
 
 On linux this can be done by:
 ```
@@ -26,7 +30,7 @@ This will preprocess the file (if necessary) with clodius and upload to the defa
 
 ```higlassUp --name TEST file```
 
-If you want to specify a specific projet onto which to upload to file you can do it as follows:
+If you want to specify a specific project onto which to upload the file you can do it as follows:
 
 ```higlassUp --project PROJECT file```
 
